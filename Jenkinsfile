@@ -9,7 +9,8 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'npm i'
+        sh '''docker build -t nyan . 
+'''
       }
     }
 
